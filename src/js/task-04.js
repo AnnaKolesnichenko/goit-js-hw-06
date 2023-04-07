@@ -9,7 +9,6 @@ function plus() {
     valueNUm.textContent = counterValue;
     console.log(valueNUm.textContent);
     
-    
 }
 
 function minus() {
