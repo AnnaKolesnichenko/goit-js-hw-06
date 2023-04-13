@@ -4,18 +4,18 @@ const btnMinus = document.querySelector('[data-action="decrement"]');
 const btnPlus = document.querySelector('[data-action="increment"]');
 const valueNUm = document.querySelector('#value');
 
-function plus() {
+function onAdd() {
     counterValue += 1;
     valueNUm.textContent = counterValue;
     console.log(valueNUm.textContent);
     
 }
 
-function minus() {
+function onDistract() {
         counterValue -= 1;
         valueNUm.textContent = counterValue;
         console.log(valueNUm.textContent);
 }
 
-btnMinus.addEventListener('click', minus);
-btnPlus.addEventListener('click', plus);
+btnMinus.addEventListener('click', onDistract);
+btnPlus.addEventListener('click', onAdd);
