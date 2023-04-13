@@ -4,8 +4,6 @@ const colorTitle = document.querySelector('.color');
 const changeClrBtn = document.querySelector('.change-color');
 const colorByName = document.body.getAttribute('style');
 
-console.dir()
-
 
 const coloring = function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

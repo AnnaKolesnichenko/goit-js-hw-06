@@ -8,13 +8,15 @@ const minNum = Number(minFont);
 const maxNum = Number(maxFont);
 
 function onFontSizeChange(event) {
-    console.log(event);
-    //for(let i = minFont; i <= maxFont; i ++) {        
-        //anyTextSpan.style.fontSize += minFont;
-    //}
+    /*console.log(event);
+    for(let i = 0; i <= maxFont; i ++) {  
+        let font = Number(minFont + i);      
+        anyTextSpan.style.fontSize = font;
+       
+        console.log(font);
+    }*/
     const fontSizePx = Math.random() * (maxNum - minNum) + minNum;
-    anyTextSpan.style.fontSize = fontSizePx + 'px';
-    
+    anyTextSpan.style.fontSize = fontSizePx + 'px';    
 }
 
 sizeControlInput.addEventListener('change', onFontSizeChange);
