@@ -4,7 +4,8 @@ function onInputBlurChange() {
     const inputLength = document.querySelector('[data-length]');
     console.log(validatingInput.value.length);
 
-    if(validatingInput.value.length == inputLength.dataset.length) {
+    if(validatingInput.value.length === +inputLength.dataset.length) {
+        validatingInput.classList.remove('invalid');
         validatingInput.classList.add('valid');
     }else if(validatingInput.value.length !==inputLength.dataset.length){
         validatingInput.classList.remove('valid');

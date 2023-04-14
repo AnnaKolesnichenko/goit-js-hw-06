@@ -23,18 +23,7 @@ categoryItem.forEach(item => {
 
 
 
-/*for(let i = 0; i <= categoryItem.length; i++) {
-    const itemTitle = document.querySelectorAll("h2");//all h2 in UL
-    itemTitle.forEach(item => console.log(item.textContent));
-
-    for(let i = 0; i <= categoryItem.length; i++) {
-        const childList = document.querySelector('.item > ul');
-        console.log(childList);
-        const childListLen = childList.querySelectorAll('li');
-        console.log(childListLen.length);
-    }
-
-}
+/*
 
 const itemTitle = document.querySelectorAll("h2");//all h2 in UL
 console.log(itemTitle);
@@ -46,25 +35,11 @@ const middleItem = firstItem.nextElementSibling;//third li.item
 const listChildren = listOfCategories.children;
 const childList = document.querySelectorAll(".item > ul");
 
-console.log(childList);
-console.log(listChildren);
-console.log(firstItem);
-console.log(middleItem);
-console.log(lastItem);
 
 
 const listAnimals = firstItem.querySelectorAll('li');
 const listProducts = middleItem.querySelectorAll('li');
 const listTechnologies = lastItem.querySelectorAll('li');
-
-console.log(listAnimals);
-console.log(listProducts);
-console.log(listTechnologies);
-console.log(listAnimals.length);
-console.log(listProducts.length);
-console.log(listTechnologies.length);
-
-
 
 
 
