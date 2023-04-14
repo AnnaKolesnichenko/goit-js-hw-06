@@ -4,10 +4,9 @@
 //TASK 1
 const listOfCategories = document.querySelector("#categories");//all UL of categories
 const categoryItem = document.querySelectorAll(".item");//every .item li
-//console.log(categoryItem);
 
 console.log(`Number of categories: ${categoryItem.length}`);
-categoryItem.forEach(item => {
+/*categoryItem.forEach(item => {
     const links = item.querySelectorAll('.item ul');
     const title = item.querySelector('.item h2');
     //console.log(links);
@@ -16,10 +15,18 @@ categoryItem.forEach(item => {
         //console.log(items.length);
         console.log(`Category: ${title.textContent}\n Elements: ${items.length}`);
 })
+})*/
+
+categoryItem.forEach(item => {
+    const links = item.querySelectorAll('.item ul');
+    const title = item.firstElementChild;
+    //console.log(links);
+    links.forEach(item => {
+        const items = item.children;
+        //console.log(items.length);
+        console.log(`Category: ${title.textContent}\n Elements: ${items.length}`);
 })
-
-//TASK 2
-
+})
 
 
 
