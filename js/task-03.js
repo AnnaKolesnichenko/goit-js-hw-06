@@ -15,8 +15,20 @@ const images = [
 
 const galleryList = document.querySelector('.gallery');
 
-const newImg = images.map(item => {
-  const imgLi = document.createElement('li');
+function createImgGallery(items) {
+  return items.map(item => {
+    return `
+    <li>
+      <img class="img-item" src="${item.url}" alt="${item.alt}"/>
+    </li>
+  `;
+  }).join('');
+} 
+const newImg = createImgGallery(images);
+console.log(newImg);
+galleryList.insertAdjacentHTML('afterbegin', newImg);
+
+/* const imgLi = document.createElement('li');
   const img = document.createElement('img');
   imgLi.insertAdjacentElement('afterbegin', img);
   imgLi.classList.add('img-item');
@@ -24,7 +36,6 @@ const newImg = images.map(item => {
   img.alt = item.alt;
   
   galleryList.append(imgLi);
-  return galleryList;
-});
+  return galleryList;*/
 
 

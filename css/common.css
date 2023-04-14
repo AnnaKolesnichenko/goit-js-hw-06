@@ -31,12 +31,12 @@ button {
   margin-left: auto;
  justify-content: center;
  gap: 10px;
-
+list-style: none;
 }
 
-.img-item img{
+.img-item {
   display: block;
-  width: 365px;
+  width: 335px;
   height: 100%;
   outline: 1px solid rgb(9, 48, 9);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
