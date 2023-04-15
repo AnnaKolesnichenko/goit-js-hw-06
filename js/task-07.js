@@ -1,10 +1,10 @@
 const sizeControlInput = document.querySelector('#font-size-control');
 const anyTextSpan = document.querySelector('#text');
 
-const minFont = sizeControlInput.getAttribute('min');
-const maxFont = sizeControlInput.getAttribute('max');
-const minNum = Number(minFont);
-const maxNum = Number(maxFont);
+//const minFont = sizeControlInput.getAttribute('min');
+//const maxFont = sizeControlInput.getAttribute('max');
+//const minNum = Number(minFont);
+//const maxNum = Number(maxFont);
 
 
 function onFontSizeChange(event) {       
