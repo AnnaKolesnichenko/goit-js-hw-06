@@ -17,7 +17,7 @@ function onBoxesCreate(amount) {
   amount = input.value;
   let baseSize = 30;
 
-  if(amount > max) {
+  if(amount > max || amount < 1) {
     return;
   }
  
