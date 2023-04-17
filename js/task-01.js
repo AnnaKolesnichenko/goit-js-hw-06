@@ -18,16 +18,12 @@ console.log(`Number of categories: ${categoryItem.length}`);
 })*/
 
 categoryItem.forEach(item => {
-    const links = item.querySelectorAll('.item ul');
+    //const links = item.querySelectorAll('.item ul');
+    const links = item.lastElementChild;
     const title = item.firstElementChild;
-    //console.log(links);
-    links.forEach(item => {
-        const items = item.children;
-        //console.log(items.length);
-        console.log(`Category: ${title.textContent}\n Elements: ${items.length}`);
-})
-})
+    console.log(`Category: ${title.textContent}\n Elements^ ${links.length}`)
 
+})
 
 
 /*
