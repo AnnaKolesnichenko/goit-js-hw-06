@@ -19,9 +19,9 @@ console.log(`Number of categories: ${categoryItem.length}`);
 
 categoryItem.forEach(item => {
     //const links = item.querySelectorAll('.item ul');
-    const links = item.lastElementChild;
+    const links = item.lastElementChild.children;
     const title = item.firstElementChild;
-    console.log(`Category: ${title.textContent}\n Elements^ ${links.length}`)
+    console.log(`Category: ${title.textContent}\n Elements: ${links.length}`)
 
 })
 

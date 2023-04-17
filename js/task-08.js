@@ -20,8 +20,13 @@ function onSubmit(event) {
         alert('Please fill in the necessary fields');
         return;
     } 
+    const form = {
+        email,
+        password
+    }    
+    console.log(form);
     
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    //console.log(`Email: ${email.value}, Password: ${password.value}`);
     event.currentTarget.reset();
 }
 

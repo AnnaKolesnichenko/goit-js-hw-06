@@ -11,13 +11,15 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-//function onColorChange() {
-  //document.body.style.backgroundColor = getRandomHexColor();
-  //colorTitle.textContent = getRandomHexColor();
+function onColorChange() {
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  colorTitle.textContent = color;
 
-//}
+}
+changeClrBtn.addEventListener('click', onColorChange);
 
-changeClrBtn.addEventListener('click', () => {
+/*changeClrBtn.addEventListener('click', () => {
   document.body.style.backgroundColor = getRandomHexColor();
   colorTitle.textContent = getRandomHexColor();
-});
+});*/

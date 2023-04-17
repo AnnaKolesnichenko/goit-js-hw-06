@@ -6,13 +6,13 @@ const anyTextSpan = document.querySelector('#text');
 //const minNum = Number(minFont);
 //const maxNum = Number(maxFont);
 
-
 function onFontSizeChange(event) {       
     anyTextSpan.style.fontSize = `${event.target.value}px`;
 
     //const fontSizePx = Math.random() * (maxNum - minNum) + minNum;
     //anyTextSpan.style.fontSize = fontSizePx + 'px';    
 }
+onFontSizeChange();
 
 sizeControlInput.addEventListener('input', onFontSizeChange);
 
